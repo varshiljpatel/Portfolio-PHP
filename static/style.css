@@ -1,0 +1,299 @@
+@import url("utilities.css");
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --main: purple;
+    --color_light: #ffffff;
+    --color_dark: #000000;
+}
+
+.upper {
+    right: 4em;
+    bottom: 2em;
+    padding: 7px;
+    background-color: #252525;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.upper:hover {
+    background-color: var(--main);
+}
+
+.upper img {
+    transform: rotate(-90deg);
+    width: 30px;
+}
+
+header nav .logo {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .logo a {
+    color: var(--color_light);
+}
+
+header nav ul li a {
+    transition: all linear 0.2s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--main);
+} 
+
+main #main_section {
+    position: relative;
+    height: 600px;
+    background-image: url("20230308_155821.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    padding: 0 10%;
+}
+
+main .blur {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(80px);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 40px;
+}
+
+main #main_section h1 {
+    color: #ffffff;
+    mix-blend-mode: exclusion;
+    font-size: 50px;
+    text-align: right;
+    width: 400px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+main #main_section p {
+    mix-blend-mode: exclusion;
+    color: #ffffff;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main #main_section a {
+    letter-spacing: 2px;
+    transition: all linear 0.2s;
+}
+
+main #main_section a:hover {
+    mix-blend-mode: exclusion;
+    background-color: var(--main);
+    color: #ffffff;
+}
+
+main #about_section {
+    background-color: var(--color_dark);
+}
+
+main .line {
+    width: 75px;
+    height: 4px;
+}
+
+main .head_title {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+main  #project_section .head_title {
+    color: var(--color_dark);
+}
+
+main #about_details img {
+    height: 200px;
+    margin-right: 50px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+main #about_details img:hover {
+    scale: 1.1;
+}
+
+main #about_details .about_para {
+    width: 30vw;
+    color: var(--color_light);
+}
+
+main #about_details .about_para p {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+main .project_section .head_title {
+    color: var(--color_dark);
+}
+
+main .project_details .first_project {
+    height: 400px;
+    width: 300px;
+    margin: 0 25px;
+    background-color: var(--color_dark);
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url("phplock.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-out;
+}
+
+main .project_details .first_project .eye_btn {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out;
+}
+
+main .project_details .first_project p {
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: var(--color_light);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;   
+}
+
+main .project_details .first_project:hover p {
+    opacity: 1;
+}
+
+main .project_details .first_project:hover .eye_btn {
+    background-color: var(--color_dark);
+}
+
+main .project_details {
+    gap: 30px;
+}
+
+main .project_details .first_project span {
+    top: 82.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color_light);
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+main .project_details .first_project .layer {
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: var(--main);
+    opacity: 0.7;
+    transition: all linear 0.2s;
+}
+
+main .project_details .first_project .eye_btn:hover {
+    height: 55px;
+    background-color: var(--main);
+}
+
+main .project_details .first_project:hover {
+    scale: 1.1;
+}
+
+main .project_details .first_project:hover .layer {
+    height: 100%;
+}
+
+footer #footer_section {
+    background-color: var(--main);
+    color: var(--color_light);
+}
+
+footer .copy_text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* ----- contact page ------ */
+
+form {
+    width: 90%;
+    max-width: 650px;
+}
+
+form label {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form input, textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 40px;
+    padding-left: 0;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+}
+
+form input {
+    width: 100%;
+    border-bottom: 1px solid var(--color_dark);
+}
+
+form textarea {
+    border: 1px solid var(--color_dark);
+}
+
+form button {
+    background-color: var(--main);
+    color: var(--color_light);
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 150px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    opacity: 0.6;
+}
+
+.contact_title {
+    color: var(--color_dark);
+}
+
+@keyframes sping {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}

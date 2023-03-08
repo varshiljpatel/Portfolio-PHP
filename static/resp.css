@@ -1,0 +1,106 @@
+@media (max-width: 680px) {
+    main .blur {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    main #main_section {
+        height: 800px;
+        background-image: url("20230308_155642.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 0 -70px;
+        background-repeat: no-repeat;
+    }
+
+    header #nav_bar {
+        padding: 25px;
+        padding-left: 30px;
+    }
+
+    header #nav_bar .logo_link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    form label {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        display: none;
+    }
+
+    .nav_layer {
+        display: none;
+        position: fixed;
+        width: 0;
+        height: 100vh;
+        background-color: var(--main);
+        z-index: 1000;
+        top: 0;
+        right: 0;
+    }
+
+    main .blur {
+        padding: 50px;
+        margin: auto;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        justify-content: center;
+    }
+
+    main #main_section h1 {
+        font-size: 50px;
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+        line-height: 40px;
+    }
+
+    main #about_section {
+        padding: 50px 10%;
+    }
+
+    #about_details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main #about_details img {
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    #about_details .about_para {
+        min-width: 100%;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    main .project_details {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer_details {
+        width: 100%;
+        max-width: 500px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer_details .footer_item {
+        justify-content: flex-start;
+        margin: 5px;
+    }
+
+    .upper {
+        right: 2em;
+    }
+}
